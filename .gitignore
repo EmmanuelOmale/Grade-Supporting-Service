@@ -1,0 +1,19 @@
+# .NET Core
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+*.json
+*.xml
+*.swp
+
+# User-specific files
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# NuGet Packages
+*.nuget.props
+*.nuget.targets
