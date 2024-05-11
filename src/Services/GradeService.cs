@@ -30,7 +30,6 @@ namespace src.Services
             var person = await _personRepository.GetPersonByIdAsync(personId);
             if (person != null)
             {
-                // Implement reporting logic
                 return null;
             }
             return null;

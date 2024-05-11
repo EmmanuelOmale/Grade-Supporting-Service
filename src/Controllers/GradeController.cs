@@ -14,14 +14,14 @@ public class GradeController : ControllerBase
     }
 
     [HttpPost("courses")]
-    public async Task<IActionResult> BulkUploadCourses(IEnumerable<Course> courses)
+    public async Task<IActionResult> BulkUploadCourses([FromBody] IEnumerable<Course> courses)
     {
         await _gradeService.UploadCoursesAsync(courses);
         return Ok("Courses uploaded successfully");
     }
 
     [HttpPost("persons")]
-    public async Task<IActionResult> BulkUploadPersonalData(IEnumerable<Person> persons)
+    public async Task<IActionResult> BulkUploadPersonalData([FromBody] IEnumerable<Person> persons)
     {
         await _gradeService.UploadPersonsAsync(persons);
         return Ok("Personal data uploaded successfully");
